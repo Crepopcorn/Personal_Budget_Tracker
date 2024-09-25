@@ -1,18 +1,56 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Personal Budget Tracker
 
-## Folder Structure
+## Overview
+The **Personal Budget Tracker** is a Java-based application designed to help users manage their finances. It allows users to track income, expenses, and savings with easy-to-use features like setting budgets, categorizing expenses, and viewing spending trends in a graphical format.
 
-The workspace contains two folders by default, where:
+## Features
+- **Track Income & Expenses**: Log your daily expenses and income to get a clear view of your financial situation.
+- **Budget Setting**: Set budgets to manage how much you want to spend in different categories.
+- **Expense Categorization**: Organize your expenses into categories like food, travel, entertainment, etc.
+- **Graphical Insights**: Visualize your spending habits with easy-to-read graphs and charts.
+- **Data Persistence**: All financial data is saved in a MySQL database, ensuring your data is safe and accessible.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Tools & Technologies
+- **Programming Language**: Java
+- **GUI**: AWT (Abstract Window Toolkit)
+- **Database**: MySQL
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/crepopcorn/personal-budget-tracker.git
+   ```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+2. Make sure MySQL is installed and properly configured. Then, create a new database for the app by running the following SQL command in your MySQL interface:
+   ```sql
+   CREATE DATABASE budget_tracker;
+   ```
 
-## Dependency Management
+3. Open the `DatabaseConnection.java` file in your code editor and update it with your MySQL credentials (username and password).
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+4. After setting up the database, run the following SQL script to create the necessary table for transactions:
+   ```sql
+   CREATE TABLE transactions (
+       id INT AUTO_INCREMENT PRIMARY KEY,
+       type VARCHAR(10),  -- 'income' or 'expense'
+       category VARCHAR(50),
+       amount DECIMAL(10, 2),
+       date DATE
+   );
+   ```
+
+5. Open the project in your preferred IDE (like VS Code or IntelliJ), and run the `Main.java` file to start the app.
+
+## Requirements
+- Java 8 or above
+- MySQL Server
+- MySQL Connector for Java
+
+## Future Enhancements
+- **Reporting**: Generate monthly or yearly financial reports.
+- **Alerts**: Set alerts for overspending in a particular category.
+- **Mobile Support**: Add support for mobile platforms.
+
+## Contributing
+Feel free to fork the project, submit issues, or open pull requests. Contributions are welcome!
