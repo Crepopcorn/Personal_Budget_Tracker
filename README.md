@@ -2,7 +2,7 @@
 # Personal Budget Tracker
 
 ## Overview
-The **Personal Budget Tracker** is a Java-based application designed to help users manage their finances. It allows users to track income, expenses, and savings with easy-to-use features like setting budgets, categorizing expenses, and viewing spending trends in a graphical format.
+The **Personal Budget Tracker** is a Java-based application designed to help users manage finances. It allows users to track income, expenses, and savings with easy-to-use features like setting budgets, categorizing expenses, and viewing spending trends in a graphical format.
 
 ## Features
 - **Track Income & Expenses**: Log your daily expenses and income to get a clear view of your financial situation.
@@ -46,11 +46,3 @@ The **Personal Budget Tracker** is a Java-based application designed to help use
 - Java 8 or above
 - MySQL Server
 - MySQL Connector for Java
-
-## Future Enhancements
-- **Reporting**: Generate monthly or yearly financial reports.
-- **Alerts**: Set alerts for overspending in a particular category.
-- **Mobile Support**: Add support for mobile platforms.
-
-## Contributing
-Feel free to fork the project, submit issues, or open pull requests. Contributions are welcome!
