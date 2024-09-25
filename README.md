@@ -4,6 +4,9 @@
 ## Overview
 The **Personal Budget Tracker** is a Java-based application designed to help users manage finances. It allows users to track income, expenses, and savings with easy-to-use features like setting budgets, categorizing expenses, and viewing spending trends in a graphical format.
 
+## App Layout
+![table_page](https://github.com/Crepopcorn/personal_budget_tracker/blob/main/layout_budget.jpg)
+
 ## Features
 - **Track Income & Expenses**: Log your daily expenses and income to get a clear view of your financial situation.
 - **Budget Setting**: Set budgets to manage how much you want to spend in different categories.
